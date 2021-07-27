@@ -17,11 +17,11 @@
 </head>
 
 <body>
-    <div class="container" style="background-color:#e3f2fd;; color:blue;">
+    <div class="container" style="background-color:grey; color :maroon;">
         <form action='.' method='post'>
             {% csrf_token %}
             {% bootstrap_form form %}
-            <button type='submit' class="btn btn-success">Submit</button>
+            <button type='submit' class="btn btn-info">Submit</button>
         </form>
     </div>
    {% block scripts %}

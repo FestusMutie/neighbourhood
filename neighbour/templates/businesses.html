@@ -2,7 +2,7 @@
 {% block content %}
     <div class="container" style="color:blue;" >
         <div class="col m12">
-            <button class="btn right hoverable modal-trigger" type="button" name="button" style="margin: 20px;" href="#modal1"><i class="material-icons left">add_circle_outline</i> Add</button>
+            <button class="btn right hoverable modal-trigger" type="button" name="button" style="margin: 20px;" href="#modal1"> Add</button>
             {% if businesses %}
             <table>
             <thead>
@@ -40,8 +40,8 @@
 
             </div>
             <div class="modal-footer">
-              <input type="button" class="btn btn-info btn-sm" value="Cancel"onclick="location.href='{{ BASE_URL }}http://127.0.0.1:8000/businesses'"></input>  
-          <input type="submit" class="btn btn-info btn-sm" value="Submit" style="margin-right:20px;">
+              <input type="button" class="btn btn-success btn-sm" value="Cancel"onclick="location.href='{{ BASE_URL }}http://127.0.0.1:8000/businesses'"></input>  
+          <input type="submit" class="btn btn-success btn-sm" value="Submit" style="margin-right:20px;">
             </div>
             </form>
           </div>
