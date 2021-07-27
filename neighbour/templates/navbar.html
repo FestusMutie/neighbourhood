@@ -1,11 +1,11 @@
 {% load static %}
-<nav style="background-image: url(https://images.unsplash.com/photo-1571055107559-3e67626fa8be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=889&q=80);" >
+<nav  style="background-image: url(https://images.unsplash.com/photo-1571055107559-3e67626fa8be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=889&q=80);padding: 7em" >
   <div class="nav-wrapper">
-    <a href="/" class="brand-logo center">Neighbourhood</a>
+    <a href="/" class="brand-logo center">😊Myhood</a>
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down">
         <li><a href="{% url 'businesses' %}">Businesses</a></li>
-        <li> <a href="#contactsmodal" class="modal-trigger">Emergency Contacts</a> </li>
+        <li> <a href="#contactsmodal" class="modal-trigger">📞Emergency Contacts</a> </li>
       </ul>
       <a href="{% url 'logout' %}" class="right"><i class="small material-icons">exit_to_app</i></a>
       <a class="right" href="{% url 'edit_profile' user.username %}" style="margin: 10px;"><img src="{% static 'img/avatar.jpeg' %}" alt="" height="40" width="40"></a>
@@ -13,7 +13,7 @@
           <li><form class="" action="{% url 'search' %}">
             <div id="custom-search-input">
                   <div class="input-group col-md-12 ui-widget">
-                      <input id="search" type="text" class="form-control input-lg" placeholder="Search business" name="search" />
+                      <input id="search" type="text" class="form-control input-lg" placeholder="🔍Search business" name="search" />
                   </div>
               </div>
         </form></li>
@@ -32,8 +32,8 @@
  <!-- Modal Structure -->
    <div id="contactsmodal" class="modal">
      <div class="modal-content">
-       <h6 style="color:rgb(57, 145, 123)">Emergeny Contacts</h6>
-       <p>Fire Brigade: 7899 <br>Ambulance: 5674 <br>Police: 999</p>
+       <h6 style="color:rgb(145, 82, 57)">Emergeny Contacts</h6>
+       <p style="color:chocolate;">Ambulance: 111 <br>Police: 999 <br>Fire Brigades:2345</p> 
      </div>
      
    </div>

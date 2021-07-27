@@ -1,4 +1,4 @@
-<!-- {% include 'base.html' %}
+{% include 'base.html' %}
 {% load bootstrap4 %}
 {% block content %}
     <div class="container">
@@ -14,10 +14,10 @@
                       {%csrf_token%}
 
                       {% bootstrap_form form%}
-                      <input type="submit" class="btn btn-info btn-sm" value="Post">
+                      <input type="submit" class="btn btn-success btn-sm" value="Post">
                     </form>
                     {% for comment in comments %}
-                        <div class="" style="padding-top:20px;">
+                        <div class="" style="padding-top:25px;">
                             <span><strong>{{comment.user}}: </strong>{{comment.comment}} <br> {{comment.pub_date}}</span>
                         </div>
                     {% endfor %}
@@ -25,4 +25,4 @@
             </div>
         </div>
     </div>
-{% endblock %} -->
+{% endblock %}

@@ -1,6 +1,6 @@
 {% include 'base.html' %}
 {% block content %}
-    <div class="container" style="background-color:#e3f2fd;; color:blue;" >
+    <div class="container" style="color:blue;" >
         <div class="col m12">
             <button class="btn right hoverable modal-trigger" type="button" name="button" style="margin: 20px;" href="#modal1"><i class="material-icons left">add_circle_outline</i> Add</button>
             {% if businesses %}
@@ -26,7 +26,7 @@
             </tbody>
           </table>
           {% else %}
-          <h3 class="center-align">No businesses registered in your Neighborhood</h3>
+          <h3 class="center">Sorry,we can't find any businesses around this place ‼️</h3>
           {% endif %}
         </div>
           <!-- Modal Structure -->
