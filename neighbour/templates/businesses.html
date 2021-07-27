@@ -2,7 +2,7 @@
 {% block content %}
     <div class="container" style="color:blue;" >
         <div class="col m12">
-            <button class="btn right hoverable modal-trigger" type="button" name="button" style="margin: 20px;" href="#modal1"> Add</button>
+            <button class="btn right hoverable modal-trigger" type="button" name="button" style="margin: 20px;background-color: black;" href="#modal1"> Add</button>
             {% if businesses %}
             <table>
             <thead>
@@ -30,7 +30,7 @@
           {% endif %}
         </div>
           <!-- Modal Structure -->
-          <div id="modal1" class="modal" style="max-height: 800px !important;">
+          <div id="modal1" class="modal" style="max-height: 800px !important;background-color: aqua;">
             <form action="{%url 'businesses' %}" method='post' enctype="multipart/form-data">
             <div class="modal-content">
               <h4>Add a Business</h4>
@@ -40,8 +40,8 @@
 
             </div>
             <div class="modal-footer">
-              <input type="button" class="btn btn-success btn-sm" value="Cancel"onclick="location.href='{{ BASE_URL }}http://127.0.0.1:8000/businesses'"></input>  
-          <input type="submit" class="btn btn-success btn-sm" value="Submit" style="margin-right:20px;">
+              <input type="button" class="btn btn-info btn-sm" value="Cancel"onclick="location.href='{{ BASE_URL }}http://127.0.0.1:8000/businesses'"></input>  
+          <input type="submit" class="btn btn-info btn-sm" value="Submit" style="margin-right:20px;">
             </div>
             </form>
           </div>
