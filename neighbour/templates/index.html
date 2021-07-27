@@ -1,14 +1,14 @@
 {% include 'base.html' %}
 {% load bootstrap4%}
 {%block content%}
-    <div class="container" style="background-color:#e3f2fd;; color:blue;">
+    <div class="container" style="background-color:#e3f2fd;; color:rgb(26, 97, 49);">
         <div class="row">
-            <div class="col m12">
-                <h3 class="center-align">Neighborhood Watch {{profile.neighborhood}}</h3>
+            <div class="col m6">
+                <h3 class="center-align">Neighborhood {{profile.neighborhood}}</h3>
 
             </div>
             {% for post in posts %}
-            <div class="col s12 m6">
+            <div class="col s6 m6">
              <div class="card-panel">
                <h5>{{post.title}}</h5>
                <p>{{post.content|truncatechars:200}}</p>
